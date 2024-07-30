@@ -1,33 +1,28 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Juego Adivinar la Palabra</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
-
+    <script src="script.js"></script>
 </head>
 <body>
-    
     <div class="container mt-5">
         <div id="configuracion" class="text-center">
             <h1>Juego del Ahorcado</h1>
-            <button id="obtenerPalabraBtn" type="button" class="btn btn-primary">Obtener Palabra</button>
+            <button id="obtenerPalabraBtn" class="btn btn-primary">Obtener Palabra</button>
         </div>
+
         <div id="juego" class="text-center" style="display: none;">
             <h2>Adivina la palabra</h2>
-            <div id="palabraOculta"></div>
-            <p id="vidas" ></p>
-            <input id="entradaAdivinanza" type="text" class="form-control form-control-lg mb-3"  placeholder="Introduce una letra" maxlength="1">
-            <button id="adivinarBtn" class="btn btn-success">
-                Adivinar
-            </button>
-            <div id="letrasUsadas"></div>
+            <div id="palabraOculta" class="fs-3 mb-3"></div>
+            <p id="mensaje" class="fs-4 mb-3"></p>
+            <input type="text" id="entradaAdivinanza" class="form-control form-control-lg mb-3" maxlength="1" placeholder="Introduce una letra" />
+            <button id="adivinarBtn" class="btn btn-success">Adivinar</button>
+            <div id="letrasUsadas" class="fs-5 mt-3">Letras usadas: </div>
         </div>
-
     </div>
-
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/5.3.0/js/bootstrap.bundle.min.js"></script>
-    <script src="./script.js"></script>
 </body>
 </html>

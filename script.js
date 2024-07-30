@@ -83,7 +83,7 @@ $(document).ready(function() {
         // Añadimos espacios entre las letras para mejorar la visibilidad
         const palabraMostradaConEspacios = palabraMostrada.split('').join(' ');
         $('#palabraOculta').text(palabraMostradaConEspacios);
-        $('#vidas').text(`Vidas restantes: ${vidasRestantes}`);
+        $('#mensaje').text(`Vidas restantes: ${vidasRestantes}`);
         $('#letrasUsadas').text(`Letras usadas: ${letrasAdivinadas.join(', ')}`);
     }
 });
